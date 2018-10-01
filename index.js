@@ -92,17 +92,19 @@ function crab2(){
           ______$_______________________ _$                          ______$_______________________ _$___`
           );
 }
-function kingCrab(){console.log(`         $
-  ______$$____________________________$__$$$__
-  ____$$$__$_________________________$$__$$$$__
-  ___$$$___$$_______________________$$$___$$$$__
-  ___$$$$$$$$_________/|_/|_/|_______$$$$$$$$$___
-  ____$$$$$$_________|||||||||_______$$$/|$$$____
-  _____$$$$____$$0$$$$$$$0$$$$$$$$____$$$$$$____
-  _______$$__$$$$$$$$$$$$$$$$$$$$$$$$__$$$$____
-  ___$$___$$$$$$$$$$   $$$$$   $$$$$$$__$$___
-  _$$__$$__$$$$$$$$$$ $$$$$$$ $$$$$$$_$$$____
-  $______$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$____
+function kingCrab(){console.log(`
+  _________________________________________$__
+  ________________________________________$$$__
+  ________$____________________________$__$$$$__
+  ______$__$_________________________$$__$$$$$$__
+  _____$___$$_______________________$$$___$$$$$$__
+  _____$$$$$$_________/|_/|_/|_______$$$$$$$$$$$__
+  ______$$$$_________|||||||||_______$$$/|$$$$$____
+  _______$$____$$0$$$$$$$0$$$$$$$$____$$$$$$$$____
+  ________$__$$$$$$$$$$$$$$$$$$$$$$$$__$$$$$$____
+  ___$$___$$$$$$$$$$   $$$$$   $$$$$$$__$$$$___
+  _$$__$$__$$$$$$$$$$ $$$$$$$ $$$$$$$_$$$$____
+  $______$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$_____
   $__$$$____$$$$$$$$$$$$$$$$$$$$$$$$$$$___$__
   __$___$$$$_$$$$$$$$$$$$$$$$$$$$$$$$$_$___$__
   _$_________$_$$$$$$$$$$$$$$$$$$$$$___$___$_
@@ -242,21 +244,24 @@ function winOrLoose(){
 
 
 startGame()
-mrC(`| Hey, ${userName}, Welcome to our little
-     | island. My name is Kitty Cat Patty Wack
-     | Mcdanials the third, but you can call me
-     | Mr. C`);
+mrC(`
+  | Hey, ${userName}, Welcome to our little
+  | island. My name is Kitty Cat Patty Wack
+  | Mcdanials the third, but you can call me
+  | Mr. C`);
     continuePrompt();
-mrC(`| Now you may have already guessed why i
-     | called you here today. Much like a early
-     | 2000s pop star, Our peaceful little town
-     | has been over run by crabs, and only you
-     | can stop them`);
+mrC(`
+  | Now you may have already guessed why i
+  | called you here today. Much like a early
+  | 2000s pop star, Our peaceful little town
+  | has been over run by crabs, and only you
+  | can stop them`);
   continuePrompt();
-mrC(`| Well it really could have been anyone,
-     | your the only person who actually
-     | responded to the email, but that's
-     | besides the point ${userName}`)
+mrC(`
+  | Well it really could have been anyone,
+  | your the only person who actually
+  | responded to the email, but that's
+   | besides the point ${userName}`)
   continuePrompt();
 mrC(`|Quickly, Take this Sword, one of them is
      | coming this way!!`);
