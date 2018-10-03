@@ -21,10 +21,20 @@ function itemActoin(userAction){
     potion()
   }
 }
+function monsterDamage() {
+  if (monsterHp1 > 0) {
+    console.log(`The Enemy hit you! Who do they think they are? `);
+    userHp -= damageCalculator(4);
+  }
+  if (monsterHp2 > 0){
+    console.log(`The Enemy hit you! You should've learned how to Dodge!`);
+    userHp -= damageCalculator(4);
+  }
+}
 function Usercombat(userAction, num){
   if (userAction == 1) {
     console.log(`You attack with your ${weaponName}!`);
-    // console.log(`You deal` + damageCalculator(attackMod)+` Damage!`);
+    monsterDamage();
     if (monsterHp1 > 0) {
       monsterHp1 -= damageCalculator(attackMod);
     } else if (monsterHp2 > 0) {
@@ -33,18 +43,11 @@ function Usercombat(userAction, num){
   } else if (userAction == 2 && (num >= 1)) {
       itemActoin(rl.keyIn(`
         1. Potion`))
+      monsterDamage();
   } else if (userAction == 2 && (num == 0)) {
     console.log(`You have No items at the Momment`);
-  }else if (userAction == 3) {
+  } else if (userAction == 3) {
     console.log(`It's a small island, where are you gonna run?`);
-  };
-  if (monsterHp1 > 0) {
-    console.log(`The Enemy hit you! Who do they think they are? `);
-    userHp -= damageCalculator(4);
-  }
-  if (monsterHp2 > 0){
-    console.log(`The Enemy hit you! You should've learned how to Dodge!`);
-    userHp -= damageCalculator(4);
   }
 }
 function damageCalculator(dmg){
@@ -308,7 +311,7 @@ monsterHp1 = 10
 do {
   stats(monsterHp1);
   crab();
-  Usercombat(attackOptions())
+  Usercombat(attackOptions(), 0)
 } while (monsterHp1 > 0 && userHp > 0);
 winOrLoose()
   console.log(`You grow stronger, HP + 10 !`);
@@ -392,7 +395,7 @@ monsterHp2 = 10
 do {
   stats(monsterHp1, monsterHp2);
   crab2();
-  Usercombat(attackOptions())
+  Usercombat(attackOptions(), 0)
 } while (monsterHp1 > 0 || monsterHp2 > 0 && userHp > 0);
 winOrLoose()
 console.log(`You grow stronger!! DMG Up!!`);
